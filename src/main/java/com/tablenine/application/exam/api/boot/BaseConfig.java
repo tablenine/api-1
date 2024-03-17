@@ -26,7 +26,7 @@ public class BaseConfig {
 	Producer producer(Environment streamEnvironment) {
 		Producer producer = streamEnvironment.producerBuilder()
 				.superStream("test_super_stream")  // <1>
-				.routing(message -> "test_super_stream-2") // <2>
+				.routing(message -> "test_super_stream-0") // <2>
 				.producerBuilder()
 				.build();  // <3>
 		return producer;
